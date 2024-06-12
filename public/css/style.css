@@ -1,0 +1,242 @@
+:root {
+  --secondary-button: #ff1770;
+  --tertairy-background: #3bcc45;
+  --secondary-background: #18ff27;
+  --primary-button: #bf4171;
+  --primary-background: #4b9950;
+  --gray: #666666;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+  background-color: var(--tertairy-background);
+  margin-bottom: 50px
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.navbar,
+.navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--white);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar .navigation,
+.navbar .navigation:focus {
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid var(--tertairy-background);
+}
+
+.navbar .navigation:hover,
+.navbar .navigation:focus:hover {
+  border-color: var(--secondary-button);
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--white);
+  box-shadow: 0px 0px 30px var(--primary-background);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  min-width: 100px;
+  font-size: 14px;
+}
+
+.navbar a:hover,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: var(--primary-button);
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  background-color: var(--tertairy-background);
+  border-radius: 3px;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  right: calc(100% - 30px);
+  visibility: hidden;
+  border-radius: 3px;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  right: 100%;
+  visibility: visible;
+}
+
+/*--------------------------------------------------------------
+# End of Navigation Menu
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start of Chatbot
+--------------------------------------------------------------*/
+
+.chat-area{
+padding: 10px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# End of Chatbot
+--------------------------------------------------------------*/
+
+.box {
+  background-color: var(--primary-background);
+  height: 600px;
+  margin-top: 150px;
+  margin: 20px;
+}
+
+.onderwerp-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--secondary-button);
+}
+
+button, .onderwerp-btn {
+  width: 85px;
+  height: 25px;
+}
+
+.onderwerp-img {
+  height: 250px;
+  width: 100%;
+}
+
+.data {
+  background-color: var(--primary-background);
+  text-align: center;
+  margin-right: 50px;
+}
+
+.map,
+.grafiek-1,
+.grafiek-2 {
+  background-color: var(--primary-background);
+  text-align: center;
+  margin: 10px;
+}
+
+#map-img{
+  border: #000000 solid 1px;
+}
+
+.contact-container {
+  display: grid;
+  width: 900px;
+  grid-template-areas: "info extr net";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 200px;
+}
+
+.info {
+  grid-area: info;
+  background-color: #4b9950;
+  width: 250px;
+  height: 250px;
+  margin-left: -100px;
+}
+
+.extra-info {
+  background-color: var(--tertairy-background);
+  margin-left: 150px;
+  margin-right: 50px;
+  width: 100px;
+  grid-area: extr;
+}
+
+.nameEmailText {
+  height: 100%;
+  gap: 10px;
+  grid-area: net;
+  max-width: 400px;
+}
+
+.r {
+  background-color: var(--secondary-button);
+  transition: 1s;
+}
+
+.g {
+  background-color: var(--secondary-background);
+  transition: 1s;
+}
+
+/*--------------------------------------------------------------
+# Support
+--------------------------------------------------------------*/
+
+.support {
+  padding-top: 300px;
+}
+
+.FAQ {
+  width: 600px;
+  float:left;
+}
+
+.FAQ-Forum {
+  margin-top: 15%;
+  overflow: hidden;
+}
+
+.FAQ, .FAQ-Forum{
+  background-color: var(--primary-background);
+  border-radius: 3px;
+}
+
+.username, .emailaddres, .area {
+ width: 100%;
+}
+
+.container .row .FAQ .container li{
+  padding: 5px;
+}
+/*--------------------------------------------------------------
+# End of Support
+--------------------------------------------------------------*/

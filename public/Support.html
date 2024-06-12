@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header id="navbar" class="navbar">
+    <h1><a href="index.html"><strong>Traff<cite>Insights</cite></strong></a></h1>
+    <ul>
+      <li class="dropdown navigation"><img class="" src="/css/img/menu-img.png" alt="" /><a href=""></a>
+        <ul>
+          <li class="dropdown"><a href="/index.html">Onderwerpen</a>
+            <ul>
+              <li><a href="/onderwerp1.html">Boten</a></li>
+              <li><a href="/onderwerp2.html">Weer</a></li>
+              <li><a href="/onderwerp3.html">Vliegtuigen</a></li>
+            </ul>
+          </li>
+          <li><a href="/berichten.html">Chatbot</a></li>
+          <li class="dropdown"><a href="/inlog.html">Account</a>
+            <ul>
+              <li><a href="/registratie.html">Registreren</a></li>
+              <li><a href="/inlog.html">Inloggen</a></li>
+            </ul>
+          </li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="FAQ">
+        <strong class="text-light">FAQ</strong>
+        <div class="container">
+          <p class="text-light">Meest voorkomende problemen en hoe u ze kunt oplossen.</p>
+          <ul>
+            <li class="text-light">1: Ik kan niet inloggen.</li>
+            <p class="text-light">Als u niet kan inloggen kan het zijn dat onze server's een storing hebben, dit
+              probleem proberen wij zo
+              spoedig mogelijk te verhelpen en u kunt om de uur proberen om in te loggen.</p>
+            <li class="text-light">2: De chatbot reageert niet.</li>
+            <p class="text-light">Veel mensen proberen de chatbot tegelijkertijd te gebruiken en dit kan langzaamheden
+              en storingen
+              veroorzaken, probeer het laater opnieuw.</p>
+            <li class="text-light">3: Wachtwoord vergeten.</li>
+            <p class="text-light">Als u het wachtwoord bent vergeten, kunt u contact met ons opnemen en vervolgens
+              zullen wij u helpen door
+              een nieuwe account aan te maken door het oude account te verwijderen.</p>
+            <li class="text-light">4: De verkeer's grafieken en mappen laaden niet.</li>
+            <p class="text-light">Er is een storing aanwezig met de server's, dit zal over een paar uur of dagen
+              verholpen zijn.</p>
+            <li class="text-light">5: ander probleem</li>
+            <p class="text-light">Gebruik alstublief de form hiernaast om u probleem met ons te communiceren en wij
+              zullen vervolgens een
+              mail naar u sturen met updates en het verloop van het probleem.</p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nameEmailText FAQ-Forum">
+        <div class="form-group">
+          <p class="text-light">Naam:</p>
+          <input type="text" name="name" id="username" class="username border" oninput="user()" placeholder="Naam"></input>
+        </div>
+        <br>
+        <div class="form-group">
+          <p class="text-light">Email:</p>
+          <input type="email" name="email" id="emailaddres" class="emailaddres border" oninput="email()" placeholder="Email"></input>
+        </div>
+        <br>
+        <div class="form-group">
+          <p class="text-light">Beschrijf u probleem hier:</p>
+          <textarea name="text" id="area" class="area" oninput="textArea()" placeholder="text"></textarea>
+        </div>
+        <button class="send">verstuur</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/support.js"></script>
+</body>
+
+</html>

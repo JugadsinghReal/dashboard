@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vliegtuigen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+<body>
+  <header id="navbar" class="navbar">
+    <h1><a href="index.html"><strong>Traff<cite>Insights</cite></strong></a></h1>
+    <ul>
+      <li class="dropdown navigation"><img class="" src="/css/img/menu-img.png" alt="" /><a href=""></a>
+        <ul>
+          <li class="dropdown"><a href="/index.html">Onderwerpen</a>
+            <ul>
+              <li><a href="/onderwerp1.html">Boten</a></li>
+              <li><a href="/onderwerp2.html">Weer</a></li>
+              <li><a href="/onderwerp3.html">Vliegtuigen</a></li>
+            </ul>
+          </li>
+          <li><a href="/berichten.html">Chatbot</a></li>
+          <li class="dropdown"><a href="/inlog.html">Account</a>
+            <ul>
+              <li><a href="/registratie.html">Registreren</a></li>
+              <li><a href="/inlog.html">Inloggen</a></li>
+            </ul>
+          </li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container ond1">
+      <div class="row">
+        <div class="col-4 data text-white text-center d-flex align-items-center rounded" style="height: 750px">
+          <p>Bij deze grafieken ziet u een live kaart over waar alle vliegtuigen die een signaal uitsturen gepakt wordt en dan op die kaart gezet.
+            <br><br>
+            Onder de live kaart ziet u ook twee grafieken, de eerste (linker) gaat over het aantal gewonden in vliegtuig ongelukken zoals: fatale gewonden, serieuze gewonden en kleine verwondingen, deze grafiek gaat vanaf het jaar 2000 tot 2019 en is wordt gefetcht vanaf de database.
+            <br><br>
+            Aan de rechter kant van deze grafiek ziet u de tweede grafiek (rechter), deze grafiek gaat over hoeveel vliegtuig ongelukken er waren in elk jaar van 2000 tot en met 2019.
+            <br><br>
+            Deze grafieken en live map zijn gemaakt door Bas van den Berg en dit was zijn onderwerp.</p>
+        </div>
+        <div class="col">
+          <div class="container map rounded">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="500px" id="gmap_canvas"
+                        src="https://adsb.lol/"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+                </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col text-white grafiek-2">
+              <canvas width="300px" height="300px" id="onderwerp-2"></canvas>
+              <p>Grafiek Tekst</p>
+            </div>
+            <div class="col text-white grafiek-1">
+              <canvas width="300px" height="300px" id="onderwerp-1"></canvas>
+              <p>Grafiek Tekst</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer></footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="JS/Ond3chart.js"></script>
+</html>
